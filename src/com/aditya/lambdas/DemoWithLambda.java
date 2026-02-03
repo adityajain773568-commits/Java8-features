@@ -1,3 +1,5 @@
+package com.aditya.lambdas;
+
 @FunctionalInterface
 interface MyInterfaceTwo{
     public void m2();

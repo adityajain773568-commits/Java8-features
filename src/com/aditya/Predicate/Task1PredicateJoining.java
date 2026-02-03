@@ -1,4 +1,7 @@
-package com.aditya.predefinedfunctionalinterfaces;
+package com.aditya.Predicate;
+
+import com.aditya.Utils.Employee;
+import com.aditya.Utils.GenerateEmployeeList;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,12 +12,7 @@ public class Task1PredicateJoining {
 
     public static void main(String[] args) {
 
-        List<Employee> employeeList = new ArrayList<>();
-        employeeList.add(new Employee("Aditya" ,120000.0, "Pune" , "Devops"));
-        employeeList.add(new Employee("Bhaskaran" ,120000.0, "Pune" , "Frontend"));
-        employeeList.add(new Employee("Darpan" ,120000.0, "Pune" , "AIML"));
-        employeeList.add(new Employee("Shubh" ,120000.0, "Pune" , "Backend"));
-
+        List<Employee> employeeList = GenerateEmployeeList.generateEmployeeList(new ArrayList<>());
         Predicate<Employee> predicate1 = employee ->employee.department.equals("Devops");
         Predicate<Employee> predicate2 = employee -> employee.location.equals("Pune");
 

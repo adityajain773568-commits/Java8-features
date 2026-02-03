@@ -1,9 +1,10 @@
 package com.aditya.streamAPI;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
+
+//Filter Operation
 
 class User{
     int id;

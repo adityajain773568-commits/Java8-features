@@ -1,4 +1,4 @@
-package com.aditya.Predicate;
+package com.aditya.Utils;
 
 public class Person {
     private String name;

@@ -1,15 +1,17 @@
 package com.aditya.MethodReference;
 
-public class TaskWithLambda {
+//Approach-3
+public class TaskWithLambda2 {
 
-    public static void printNumber(){
+    public  void printNumber(){
         for (int i = 1 ; i<=5 ; i++){
             System.out.println(i);
         }
     }
 
     public static void main(String[] args) {
-        Runnable runnable = TaskWithLambda::printNumber;
+        TaskWithLambda2 task = new TaskWithLambda2();
+        Runnable runnable = task::printNumber;
         Thread t1 = new Thread(runnable);
         t1.start();
     }

@@ -1,3 +1,5 @@
+package com.aditya.Predicate;
+
 import java.util.function.Predicate;
 
 public class PredicateWithoutLambda implements Predicate<Integer> {

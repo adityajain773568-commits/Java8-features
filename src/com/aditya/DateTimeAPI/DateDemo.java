@@ -20,7 +20,7 @@ public class DateDemo {
 
 //        Convert String to Date
         SimpleDateFormat sdf3 = new SimpleDateFormat("yyyy-MM-dd");
-        Date parsedDate = sdf3.parse(USFormat);
+        Date parsedDate = sdf3.parse("2025-12-20");
         
 
 
